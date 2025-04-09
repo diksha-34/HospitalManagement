@@ -6,9 +6,9 @@ dotenv.config();
 
 
 
-
-app.use(express.json());
 const app = express();
+app.use(express.json());
+
 app.use(cors());
 
 connectDB();
