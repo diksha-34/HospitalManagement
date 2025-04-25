@@ -19,7 +19,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://hospital-management-seven-lake.vercel.app/api/login', {
+      const response = await fetch('http://hos-manage.eu-north-1.elasticbeanstalk.com/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

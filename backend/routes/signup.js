@@ -4,8 +4,9 @@ const User = require('../models/User');
 const router = express.Router();
 
 router.post('/', async (req, res) => {
-  const { firstName, lastName, email, password, role } = req.body;
 
+  const { firstName, lastName, email, password, role } = req.body;
+  console.log(req.body)
   console.log('Received data:', req.body); // Add this line to log the request body
 
   try {

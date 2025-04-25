@@ -38,7 +38,7 @@ const SignUp = () => {
     e.preventDefault();
     if (validateForm()) {
       try {
-        const response = await fetch('https://hospital-management-seven-lake.vercel.app/api/signup', {
+        const response = await fetch('http://hos-manage.eu-north-1.elasticbeanstalk.com/api/signup', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

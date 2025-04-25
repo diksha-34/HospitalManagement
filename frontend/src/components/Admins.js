@@ -111,7 +111,7 @@ export default function AdminDashboard() {
         // Handle not authenticated case
         return;
       }
-      const response = await fetch('https://hospital-management-seven-lake.vercel.app/api/admin/profile', {
+      const response = await fetch('http://hos-manage.eu-north-1.elasticbeanstalk.com/api/admin/profile', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -135,7 +135,7 @@ export default function AdminDashboard() {
       if (!token) {
         return;
       }
-      const response = await fetch('https://hospital-management-seven-lake.vercel.app/api/admin/total-doctors', {
+      const response = await fetch('http://hos-manage.eu-north-1.elasticbeanstalk.com/api/admin/total-doctors', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -157,7 +157,7 @@ export default function AdminDashboard() {
       if (!token) {
         return;
       }
-      const response = await fetch('https://hospital-management-seven-lake.vercel.app/api/admin/total-patients', {
+      const response = await fetch('http://hos-manage.eu-north-1.elasticbeanstalk.com/api/admin/total-patients', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -179,7 +179,7 @@ export default function AdminDashboard() {
       if (!token) {
         return;
       }
-      const response = await fetch('https://hospital-management-seven-lake.vercel.app/api/admin/doctor-overview', {
+      const response = await fetch('http://hos-manage.eu-north-1.elasticbeanstalk.com/api/admin/doctor-overview', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -201,7 +201,7 @@ export default function AdminDashboard() {
       if (!token) {
         return;
       }
-      const response = await fetch('https://hospital-management-seven-lake.vercel.app/api/admin/patient-overview', {
+      const response = await fetch('http://hos-manage.eu-north-1.elasticbeanstalk.com/api/admin/patient-overview', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -380,7 +380,7 @@ export default function AdminDashboard() {
           navigate('/login');
           return;
         }
-        const response = await fetch('https://hospital-management-seven-lake.vercel.app/api/admin/profile', {
+        const response = await fetch('http://hos-manage.eu-north-1.elasticbeanstalk.com/api/admin/profile', {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -475,7 +475,7 @@ export default function AdminDashboard() {
           alert('You are not authenticated. Please log in.');
           return;
         }
-        const response = await fetch('https://hospital-management-seven-lake.vercel.app/api/admin/add-doctor', {
+        const response = await fetch('http://hos-manage.eu-north-1.elasticbeanstalk.com/api/admin/add-doctor', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -599,7 +599,7 @@ export default function AdminDashboard() {
           alert('You are not authenticated. Please log in.');
           return;
         }
-        const response = await fetch('https://hospital-management-seven-lake.vercel.app/api/admin/add-admin', {
+        const response = await fetch('http://hos-manage.eu-north-1.elasticbeanstalk.com/api/admin/add-admin', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
